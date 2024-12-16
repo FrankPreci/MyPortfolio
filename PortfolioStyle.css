@@ -1,5 +1,13 @@
 body{
     background-color: rgb(140, 139, 139);
+
+    background-image: url(Images/RainyArt.jpg);
+    height: 100%; /* Full height */
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .menu-row{
     position: fixed;  
@@ -20,16 +28,19 @@ body{
     text-align: center;            /* Center text inside boxes */
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); Optional shadow */
 }
-.page-flexbox{
-    display: flex;
+.box > a{
+    margin: 0 50px;
+}
+.page-box{
     margin: 50px 100px;
     padding: 50px;
     background-color: antiquewhite;
-    position:fixed;
-    width:100%;
+    width:85%;
     height:70%;
-
     z-index:1000;
+}
+div.page-box > div{
+    display: flex;
 }
 .overlay{
     opacity:0.8;
@@ -40,4 +51,10 @@ body{
     top:0px;
     left:0px;
     z-index:1000;
+}
+.summary {
+    width: 900px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-align: justify;
 }
