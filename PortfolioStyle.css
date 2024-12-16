@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(140, 139, 139);
+}
+.menu-row{
+    position: fixed;  
+}
+.row {
+    display: flex;                 /* Use Flexbox for layout */
+    justify-content: space-around; /* Space containers evenly */
+    padding: 1px;
+    margin: 2px 2px 2px ;         /* Add padding around the container */
+}
+
+.box {
+    background-color: black;    /* Container background color */
+    color: black;                  /* Text color */
+    padding: 20px 20px 20px 10px;                 /* Padding inside the boxes */
+    margin: 2px;                  /* Margin around the boxes */
+    flex: 1;                       /* Allow boxes to grow equally */
+    text-align: center;            /* Center text inside boxes */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); Optional shadow */
+}
+.page-flexbox{
+    display: flex;
+    margin: 50px 100px;
+    padding: 50px;
+    background-color: antiquewhite;
+    position:fixed;
+    width:100%;
+    height:70%;
+
+    z-index:1000;
+}
+.overlay{
+    opacity:0.8;
+    background-color:#ccc;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+}
