@@ -7,7 +7,25 @@
         <script src="functionality.js"></script>
         <title>Francisco's Portfolio</title>
         <style>
-
+            .project-container{
+                align-items: center;
+                height: 1100px;
+                margin: 50px auto;
+                padding: 50px;
+                background-color: antiquewhite;
+                width:65%;
+                z-index:1000;
+            }
+            .project-item{
+                text-align: center;
+                margin-top: 10px;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+            .img-resize{
+                height: 300px;
+                width: auto;
+            }
         </style>
     </head>
     <body>
@@ -15,11 +33,31 @@
             <div class="row box">
               <a href="Home.html" style="color: rgb(212, 212, 212);">HOME</a>
               <a href="About.html" style="color: rgb(212, 212, 212);">ABOUT</a>
-              <a href="Projects.html" style="color:  rgb(212, 212, 212);">WHERE</a>
+              <a href="Projects.html" style="color:  rgb(212, 212, 212);">PROJECTS</a>
             </div>
         </nav>
-        <div class="page-box row" style="height: 1000px;">
+        <div class="project-container" style="height: 1000px;">
+            <h1 style="text-align: center;">PROJECTS</h1>
+            <div class="project-item">
+                <a href="https://miteuk.itch.io/i-will-survive"><img src="https://img.itch.zone/aW1nLzE4ODk3ODQxLnBuZw==/original/g77xeJ.png" alt="i-will-survive" class="img-resize"></a>
+                <h2>^ ^ ^ Click ^ ^ ^</h2>
+            </div>
+            <div class="project-item" style="margin-top: 100px;">
+                <H1>Skills</H1>
+                <pre style="font-size: 20px; font-weight: bold;">
+C++
+C#
+HTML
+CSS
+PYTHON
+UNITY
+                </pre>
+            </div>
+            <div class="project-item" style="margin-top: 40px;">
+                <h1>MORE PROJECTS TO COME</h1>
 
+            </div>
         </div>
+
     </body>
 </html>

@@ -16,3 +16,7 @@ for(let b in fruits){
 for(let b of fruits){
     console.log(b);
 }
+let x = 3;
+const y = x++;
+const z = ++x;
+console.log(x, y, z);

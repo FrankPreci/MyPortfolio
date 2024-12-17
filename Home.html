@@ -22,7 +22,29 @@
         height: 400px;             /* Set height (equal to width for a perfect circle) */
         border-radius: 50%;        /* Make it a circle */
         object-fit: cover;         /* Crop the image to fit within the circle */
-        border: 3px solid #000;    /* Optional: Add a border around the circle */
+        /* border: 3px solid #000;    Optional: Add a border around the circle */
+      }
+      .links-container{
+        width: 250px;
+        height: 100px;
+        display: block;
+      }
+      .links-container>div{
+        display: flex;
+        height: 100px;
+        width: 400px;
+        margin-bottom: 30px;
+        align-items: center;
+      }
+      .links{
+        font-size: 50px;
+        color: blue;
+        margin-left: 40px;
+      }
+      .link-logo{
+        height: 100px;
+        width: 100px;
+        justify-content: left;
       }
     </style>
 </head>
@@ -32,25 +54,38 @@
   <div class="row box">
     <a href="Home.html" style="color: rgb(212, 212, 212);">HOME</a>
     <a href="About.html" style="color: rgb(212, 212, 212);">ABOUT</a>
-    <a href="Projects.html" style="color:  rgb(212, 212, 212);">WHERE</a>
+    <a href="Projects.html" style="color:  rgb(212, 212, 212);">PROJECTS</a>
   </div>
 </nav>
   <!-- <img src="Images/CATBOSS.jpg" alt="CATBOSS"> -->
   <div class="page-box " style="height: 1000px;">
-
-    <div >
-      <h1 >Francisco Preciado</h1>
-      <a href="https://github.com/ArthritisWarrior">GitHub</a>
-      <div>
-        Web Dev | Game Dev | Programmer
+    <div style=" justify-content: center;">
+      <h1 style="font-size: 80px;">Francisco Preciado</h1>
+        <p style="font-size: 40px; font-family: Arial, Helvetica, sans-serif; font-weight: bolder;"> Dev | Game Dev | Programmer</p>
         <!-- <button onclick="msg()">SOS</button> -->
-      </div>
+        <div class="links-container">
+          <div>
+            <img src="https://cdn.icon-icons.com/icons2/3685/PNG/512/github_logo_icon_229278.png" alt="logo" class="link-logo">
+            <a href="https://github.com/ArthritisWarrior" class="links">GitHub</a>
+          </div>
+          <div>
+            <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon.svg" alt="Logo" class="link-logo">
+            <a href="https://www.linkedin.com/in/francisco-preciado-7369442b6/" class="links">LinkedIn</a>
+          </div>
+          <div>
+            <img src="https://static.vecteezy.com/system/resources/previews/016/716/465/non_2x/gmail-icon-free-png.png" alt="GMAIL LOGO" class="link-logo">
+            <a href="mailto:Franciscopre00@gmail.com" class="links">Gmail</a>
+          </div>
+          <div>
+            <a href="Images/Francisco's_Resume .pdf" class="links">Resume Link</a>
+          </div>
+        </div>
     </div>
 
-    <div>
+    <div style="display: inline-block; justify-content: center;">
       <img src="https://img.freepik.com/premium-vector/ninja-with-tablet-pc-cute-cartoon-style-vector-illustration_1142-77341.jpg" 
       alt="coding avatar" class="circle-image" style="position: relative;">
-      <p class="quote">"whats really good"</p>
+      <p class="quote">"Coding For Tomorrow..."</p>
     </div>
 
   </div>

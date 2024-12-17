@@ -32,6 +32,9 @@ body{
     margin: 0 50px;
 }
 .page-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     margin: 50px 100px;
     padding: 50px;
     background-color: antiquewhite;
@@ -39,9 +42,10 @@ body{
     height:70%;
     z-index:1000;
 }
-div.page-box > div{
-    display: flex;
+.page-box-lim{
+    justify-content: space-evenly;  
 }
+
 .overlay{
     opacity:0.8;
     background-color:#ccc;
@@ -52,9 +56,4 @@ div.page-box > div{
     left:0px;
     z-index:1000;
 }
-.summary {
-    width: 900px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-    text-align: justify;
-}
+
