@@ -1,7 +1,7 @@
 body{
     background-color: rgb(140, 139, 139);
 
-    background-image: url(Images/RainyArt.jpg);
+    background-image: url(Assets/RainyArt.jpg);
     height: 100%; /* Full height */
 
     /* Center and scale the image nicely */
