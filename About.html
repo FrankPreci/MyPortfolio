@@ -7,7 +7,7 @@
         <script src="functionality.js"></script>
         <title>Francisco's Portfolio</title>
         <style>
-            .about{
+            /* .about{
                 align-items: center;
                 height: auto;
                 margin: 50px auto;
@@ -15,15 +15,20 @@
                 background-color: antiquewhite;
                 width:65%;
                 z-index:1000;
+            } */
+            .page-box.about {
+                align-items: center;
+                height: auto;
+                margin: 50px auto;
+                padding: 50px;
+                width: 65%;
+                z-index: 1000;
             }
+
             .summary {
-                font-size: calc(.5vh + .7vh + 0.5em); /* Adjust font size dynamically */
-                text-align: center;
-                width: 100%;
-                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1.1rem;
+                line-height: 1.8;
                 text-align: justify;
-                line-height: 2;
-                padding: 0;
             }
             .wrap-image {
                 float: left; /* Float image to the left */
@@ -35,23 +40,24 @@
     </head>
     <body>
         <nav >
-            <div class="row box">
+            <div class=" row box">
               <a href="index.html" style="color: rgb(212, 212, 212);">HOME</a>
               <a href="About.html" style="color: rgb(212, 212, 212);">ABOUT</a>
               <a href="Projects.html" style="color:  rgb(212, 212, 212);">PROJECTS</a>
             </div>
         </nav>
 
-        <div class="about" >
+        <div class="page-box about text-white" >
             <h1 style="text-align: center;">About</h1>
             <div style="padding: 0 60px;">
             <p class="summary">
-                    <img src="Assets/me_in_garden_pic.jpg" alt="Me at the garden" class="wrap-image" >
+                    <img src="Assets/Images/me_in_garden_pic.jpg" alt="Me at the garden" class="wrap-image" >
                     Hi,  my name Francisco Preciado. I am a Computer Science graduate with a strong foundation in software development, problem-solving, and technology-driven solutions. I am passionate about building efficient, innovative systems and have a particular interest in software engineering and game development. My hands-on experience includes coding, debugging, and collaborating on projects that highlight my ability to adapt, learn new technologies quickly, and deliver high-quality results.
                 Throughout my academic and project experience, I have developed a solid understanding of programming languages, development frameworks, and software design principles. I thrive in collaborative environments, leveraging my strong communication and teamwork skills to solve complex challenges and drive projects to completion. I am always eager to explore new tools and methodologies to stay current with industry trends and improve my workflow.
                 I am now seeking an opportunity in the tech industry where I can apply my technical expertise and creative problem-solving abilities to contribute to impactful projects. I aim to work in an environment that fosters growth, innovation, and continuous learning, allowing me to expand my skill set and make meaningful contributions as a developer. My ultimate goal is to play a key role in creating solutions that not only meet business objectives but also provide value to users and communities.
             </p>
             </div>
         </div>
+
     </body>
 </html>

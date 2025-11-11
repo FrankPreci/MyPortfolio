@@ -1,50 +1,80 @@
 body{
     background-color: rgb(140, 139, 139);
-    position: relative;
-    background-image: url(Assets/RainyArt.jpg);
+    background-image: url(https://i.pinimg.com/1200x/b4/47/e4/b447e41b6620124d0e5eaa2d4c89da0d.jpg);
     height: 100%; /* Full height */
+    width: 100%;  /* Full width */
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.menu-row{
-    position: fixed;  
+
+/* Make sure the page can scroll horizontally if content exceeds viewport */
+html, body {
+  overflow-x: auto; /* allows horizontal scroll when needed */
 }
+
+/* Navbar: sticky only on the X axis */
+#navbar {
+  position: sticky;
+  left: 0;              /* stick on horizontal scroll */
+  top: auto;            /* ensure it does NOT stick vertically */
+  overflow-x: auto;
+  white-space: nowrap;
+  background-color: black;
+  z-index: 10;
+}
+
+/* Links inside navbar */
+#navbar a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  color: rgb(212, 212, 212);
+  padding: 14px 16px;
+}
+
+/* Row: remove sticky here to avoid conflict */
 .row {
-    display: flex;                 /* Use Flexbox for layout */
-    justify-content: space-around; /* Space containers evenly */
-    padding: 1px;
-    margin: 2px 2px 2px ;         /* Add padding around the container */
+  display: flex;
+  justify-content: space-around;
+  /* position: sticky;  <-- REMOVE this line */
 }
+
 
 .box {
     background-color: black;    /* Container background color */
-    color: black;                  /* Text color */
-    padding: 20px 20px 20px 10px;                 /* Padding inside the boxes */
-    margin: 2px;                  /* Margin around the boxes */
-    flex: 1;                       /* Allow boxes to grow equally */
-    text-align: center;            /* Center text inside boxes */
+    color: white;                  /* Text color */
+    padding: 2% 5% 2% 5%;    /* Padding inside the boxes */
+    margin: 3vh;                  /* Margin around the boxes */
+    /* flex:auto;                       Allow boxes to grow equally */
+    text-align: center;  
+    min-width:fit-content;           /* Ensure boxes don't shrink too much */
+    
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); Optional shadow */
 }
+.text-white{
+    color: aliceblue;
+}
 .box > a{
-    margin: 0 50px;
+    margin: 0 2vh;
 }
-.page-box{
-    display: flex;
+.page-box {
+    background-color: rgba(0, 0, 0, 0.78);
     flex-wrap: nowrap;
+    height: 50%;
     justify-content: space-evenly;
-    margin: 50px 5%;
-    padding: 2%;
-    background-color: antiquewhite;
-    width:85%;
-    height:50%;
-    z-index:1000;
+    margin: 3% 5%;
     overflow-y: auto;
+    padding: 2%;
     position: relative;
+    width: 85%;
+    z-index: 1000;
 }
+
 .page-box-lim{
-    justify-content: space-evenly;  
+    justify-content: space-evenly;
 }
 
 .overlay{
@@ -57,4 +87,3 @@ body{
     left:0px;
     z-index:1000;
 }
-

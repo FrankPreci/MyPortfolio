@@ -6,15 +6,14 @@
     <link rel="stylesheet" type="text/css" href="PortfolioStyle.css">
     <title>Francisco's Portfolio</title>
     <style>
+      .page-box.index{
+        display: flex;
+      }
       .quote{
         text-align: center;
         font-style: italic;
         font-size:x-large;
         font-weight: bold;
-      }
-      nav.sticky{
-        position:sticky;
-        position-anchor: initial;
       }
       .circle-image {
         width: 400px;              /* Set width */
@@ -24,9 +23,8 @@
         /* border: 3px solid #000;    Optional: Add a border around the circle */
       }
       .links-container{
-        width: 250px;
-        height: 100px;
-        display: block;
+        width: auto;
+        height: auto;
       }
       .links-container>div{
         display: flex;
@@ -49,16 +47,16 @@
 </head>
 <body >
     <!-- Links (sit on top) -->
-<nav >
-  <div class="row box">
-    <a href="index.html" style="color: rgb(212, 212, 212);">HOME</a>
-    <a href="About.html" style="color: rgb(212, 212, 212);">ABOUT</a>
-    <a href="Projects.html" style="color:  rgb(212, 212, 212);">PROJECTS</a>
-  </div>
-</nav>
+    <nav >
+        <div class="row box">
+          <a href="index.html" style="color: rgb(212, 212, 212);">HOME</a>
+          <a href="About.html" style="color: rgb(212, 212, 212);">ABOUT</a>
+          <a href="Projects.html" style="color:  rgb(212, 212, 212);">PROJECTS</a>
+        </div>
+    </nav>
   <!-- <img src="Images/CATBOSS.jpg" alt="CATBOSS"> -->
-  <div class="page-box " style="height: 1000px;">
-    <div >
+  <div class="page-box index text-white" style="">
+    <div>
       <h1 style="font-size: 80px;">Francisco Preciado</h1>
         <p style="font-size: 40px; font-family: Arial, Helvetica, sans-serif; font-weight: bolder;"> Dev | Game Dev | Programmer</p>
         <!-- <button onclick="msg()">SOS</button> -->
@@ -76,14 +74,15 @@
             <a href="mailto:Franciscopre00@gmail.com" class="links">Gmail</a>
           </div>
           <div>
-            <a href="Assets/Francisco's_Resume .pdf" class="links">Resume Link</a>
+            <a href="Assets/Images/Francisco's_Resume .pdf" class="links">Resume Link</a>
           </div>
         </div>
+      
     </div>
 
     <div >
       <img src="https://img.freepik.com/premium-vector/ninja-with-tablet-pc-cute-cartoon-style-vector-illustration_1142-77341.jpg" 
-      alt="coding avatar" class="circle-image" style="position: relative;">
+      alt="coding avatar" class="circle-image" style="position: relative; ">
       <p class="quote">"Coding For Tomorrow..."</p>
     </div>
 
